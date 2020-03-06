@@ -12,7 +12,7 @@ More info should be added as the repo grows.
 - Commits are in present tense, short and to the point.
 - If a commit message is particularly long or contains more than one conjunction, "git reset --hard" and do it again
 but with smaller steps this time. It is practice after all :)
-
+- Comments do not need to mention updating the readme. That is implied. Hint hint.
 
 # IntelliJ Plugins Installed
 - Gauge
