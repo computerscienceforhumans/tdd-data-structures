@@ -52,7 +52,7 @@ class SingleLinkedListTest {
     }
 
     @Nested
-    class AddNodeTests {
+    class AddNodeToTailEndTests {
         @BeforeEach
         void setUp() {
             singleLink = new SingleLinkedList();
@@ -75,6 +75,18 @@ class SingleLinkedListTest {
 
             int expected = 1;
             int actual = singleLink.head().next().value();
+
+            assertEquals(expected, actual);
+        }
+
+        @Test
+        void furtherNodesAreAddedToEnd() {
+            singleLink.addToTailEnd(-47);
+            singleLink.addToTailEnd(99999);
+            singleLink.addToTailEnd(1111111);
+
+            int expected = 1111111;
+            int actual = singleLink.head().next().next().value();
 
             assertEquals(expected, actual);
         }

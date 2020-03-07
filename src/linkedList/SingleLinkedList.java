@@ -18,13 +18,18 @@ public class SingleLinkedList {
 
     public void addToTailEnd(int number) {
         OneWayNode newNode = new OneWayNode(number);
-
-        if( this.head == null ) {
-            this.head = newNode;
+        if (head == null) {
+            head = newNode;
             return;
         }
 
-        this.head.next = newNode;
+        OneWayNode currentNode = head;
+
+        while(currentNode.next() != null) {
+            currentNode = currentNode.next();
+        }
+
+        currentNode.next = newNode;
     }
 
     public String toString() {
