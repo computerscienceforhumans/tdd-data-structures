@@ -30,7 +30,7 @@ class SingleLinkedListTest {
 
         @Test
         void headValueIsSurroundedBySquareBrackets() {
-            singleLink.add(128512);
+            singleLink.addToTailEnd(128512);
 
             String expected = "[128512]";
             String actual = singleLink.toString();
@@ -40,8 +40,8 @@ class SingleLinkedListTest {
 
 //        @Test
 //        void futureNodesAreSeparatedByArrows() {
-//            singleLink.add(406);
-//            singleLink.add(-283);
+//            singleLink.addToTailEnd(406);
+//            singleLink.addToTailEnd(-283);
 //
 //            String expected = "[406]->-283";
 //            String actual = singleLink.toString();
@@ -60,7 +60,7 @@ class SingleLinkedListTest {
 
         @Test
         void firstAddedNodeBecomesHead() {
-            singleLink.add(137);
+            singleLink.addToTailEnd(137);
 
             int expected = 137;
             int actual = singleLink.headValue();
@@ -70,8 +70,8 @@ class SingleLinkedListTest {
 
         @Test
         void secondAddedNodeIsNext() {
-            singleLink.add(0);
-            singleLink.add(1);
+            singleLink.addToTailEnd(0);
+            singleLink.addToTailEnd(1);
 
             int expected = 1;
             int actual = singleLink.head().next().value();

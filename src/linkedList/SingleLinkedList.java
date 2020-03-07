@@ -16,7 +16,7 @@ public class SingleLinkedList {
         return head.value();
     }
 
-    public void add(int number) {
+    public void addToTailEnd(int number) {
         OneWayNode newNode = new OneWayNode(number);
 
         if( this.head == null ) {
