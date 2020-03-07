@@ -13,7 +13,8 @@ public class SingleLinkedList {
     }
 
     public String toString() {
-        return "";
+        if(head == null) return "";
+        return "[" + this.headValue() + "]";
     }
 
     public class OneWayNode {

@@ -28,6 +28,16 @@ class SingleLinkedListTest {
             assertEquals(expected, actual);
         }
 
+        @Test
+        public void listHeadValueIsSurroundedBySquareBrackets() {
+            singleLink.add(128512);
+
+            String expected = "[128512]";
+            String actual = singleLink.toString();
+
+            assertEquals(expected, actual);
+        }
+
     }
 
     @Nested
