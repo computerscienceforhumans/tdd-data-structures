@@ -32,7 +32,6 @@ public class SingleLinkedList {
         boolean isHead = true;
 
         for(OneWayNode currentNode = head; currentNode != null; currentNode = currentNode.next()) {
-            if (currentNode == null) return listString;
             if (isHead) {
                 listString += "[" + currentNode.value() + "]";
                 isHead = false;
