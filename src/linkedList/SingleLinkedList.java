@@ -28,18 +28,18 @@ public class SingleLinkedList {
     }
 
     public String toString() {
-        String listString = "";
+        StringBuilder listString = new StringBuilder();
         boolean isHead = true;
 
         for(OneWayNode currentNode = head; currentNode != null; currentNode = currentNode.next()) {
             if (isHead) {
-                listString += "[" + currentNode.value() + "]";
+                listString = listString.append("[" + currentNode.value() + "]");
                 isHead = false;
             }
-            else listString += "->(" + currentNode.value() + ")";
+            else listString = listString.append("->(" + currentNode.value() + ")");
         }
 
-        return listString;
+        return listString.toString();
     }
 
     public class OneWayNode {
