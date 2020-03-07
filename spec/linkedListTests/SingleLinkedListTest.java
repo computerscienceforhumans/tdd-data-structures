@@ -52,7 +52,7 @@ class SingleLinkedListTest {
     }
 
     @Nested
-    class AddNodeToTailEndTests {
+    class AppendNodeTests {
         @BeforeEach
         void setUp() {
             singleLink = new SingleLinkedList();
@@ -87,6 +87,18 @@ class SingleLinkedListTest {
 
             int expected = 1111111;
             int actual = singleLink.head().next().next().value();
+
+            assertEquals(expected, actual);
+        }
+
+        @Test
+        void longerListsShouldAppendCorrectly() {
+            for(int number = 0; number < 30; number++) {
+                singleLink.appendNumber(number);
+            }
+
+            String expected = "[0]->(1)->(2)->(3)->(4)->(5)->(6)->(7)->(8)->(9)->(10)->(11)->(12)->(13)->(14)->(15)->(16)->(17)->(18)->(19)->(20)->(21)->(22)->(23)->(24)->(25)->(26)->(27)->(28)->(29)";
+            String actual = singleLink.toString();
 
             assertEquals(expected, actual);
         }
