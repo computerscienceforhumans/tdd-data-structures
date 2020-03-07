@@ -2,9 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="88d2395b-89b1-4457-876f-94d455144f1a" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spec/linkedListTests/SingleLinkedListTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/spec/linkedListTests/SingleLinkedListTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/linkedList/SingleLinkedList.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/linkedList/SingleLinkedList.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -22,8 +20,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/linkedList/SingleLinkedList.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="207">
-              <caret line="20" column="24" selection-start-line="20" selection-start-column="24" selection-end-line="20" selection-end-column="24" />
+            <state relative-caret-position="173">
+              <caret line="18" column="22" selection-start-line="18" selection-start-column="22" selection-end-line="18" selection-end-column="22" />
               <folding>
                 <element signature="e#113#114#0" expanded="true" />
                 <element signature="e#139#140#0" expanded="true" />
@@ -41,8 +39,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/spec/linkedListTests/SingleLinkedListTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="411">
-              <caret line="85" column="45" lean-forward="true" selection-start-line="85" selection-start-column="45" selection-end-line="85" selection-end-column="45" />
+            <state relative-caret-position="377">
+              <caret line="83" column="36" lean-forward="true" selection-start-line="83" selection-start-column="36" selection-end-line="83" selection-end-column="36" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -134,6 +132,7 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit5" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5" value="" />
+    <property name="extract.method.default.visibility" value="private" />
     <property name="jdk.selected.JAVA_MODULE" value="1.8" />
   </component>
   <component name="RecentsManager">
@@ -225,34 +224,34 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="SingleLinkedListTest - 2020.03.06 at 20h 40m 19s.xml">
+    <history-entry file="SingleLinkedListTest - 2020.03.06 at 20h 58m 57s.xml">
       <configuration name="SingleLinkedListTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="SingleLinkedListTest - 2020.03.06 at 20h 40m 40s.xml">
+    <history-entry file="SingleLinkedListTest - 2020.03.06 at 21h 01m 52s.xml">
       <configuration name="SingleLinkedListTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="SingleLinkedListTest - 2020.03.06 at 20h 40m 54s.xml">
+    <history-entry file="SingleLinkedListTest - 2020.03.06 at 21h 02m 41s.xml">
       <configuration name="SingleLinkedListTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="SingleLinkedListTest - 2020.03.06 at 20h 41m 36s.xml">
+    <history-entry file="SingleLinkedListTest - 2020.03.06 at 21h 03m 45s.xml">
       <configuration name="SingleLinkedListTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="SingleLinkedListTest - 2020.03.06 at 20h 42m 40s.xml">
+    <history-entry file="SingleLinkedListTest - 2020.03.06 at 21h 04m 21s.xml">
       <configuration name="SingleLinkedListTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="SingleLinkedListTest - 2020.03.06 at 20h 42m 47s.xml">
+    <history-entry file="SingleLinkedListTest - 2020.03.06 at 21h 04m 35s.xml">
       <configuration name="SingleLinkedListTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="SingleLinkedListTest - 2020.03.06 at 20h 42m 54s.xml">
+    <history-entry file="SingleLinkedListTest - 2020.03.06 at 21h 04m 52s.xml">
       <configuration name="SingleLinkedListTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="SingleLinkedListTest - 2020.03.06 at 20h 49m 18s.xml">
+    <history-entry file="SingleLinkedListTest - 2020.03.06 at 21h 05m 20s.xml">
       <configuration name="SingleLinkedListTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="SingleLinkedListTest - 2020.03.06 at 20h 53m 20s.xml">
+    <history-entry file="SingleLinkedListTest - 2020.03.06 at 21h 05m 38s.xml">
       <configuration name="SingleLinkedListTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="SingleLinkedListTest - 2020.03.06 at 20h 56m 51s.xml">
+    <history-entry file="SingleLinkedListTest - 2020.03.06 at 21h 06m 00s.xml">
       <configuration name="SingleLinkedListTest" configurationId="JUnit" />
     </history-entry>
   </component>
@@ -272,12 +271,12 @@
       <window_info anchor="bottom" id="Messages" order="2" sideWeight="0.4997242" weight="0.32917964" />
       <window_info anchor="bottom" id="Message" order="3" />
       <window_info anchor="bottom" id="Find" order="4" sideWeight="0.49862108" weight="0.32917964" />
-      <window_info active="true" anchor="bottom" id="Run" order="5" sideWeight="0.4980695" visible="true" weight="0.32917964" />
+      <window_info anchor="bottom" id="Run" order="5" sideWeight="0.4980695" visible="true" weight="0.32917964" />
       <window_info anchor="bottom" id="Debug" order="6" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="7" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="8" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="9" />
-      <window_info anchor="bottom" id="Terminal" order="10" sideWeight="0.5019305" side_tool="true" visible="true" weight="0.32917964" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="10" sideWeight="0.5019305" side_tool="true" visible="true" weight="0.32917964" />
       <window_info anchor="right" id="Palette" order="0" />
       <window_info anchor="right" id="Theme Preview" order="1" />
       <window_info anchor="right" id="Capture Analysis" order="2" />
@@ -309,8 +308,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/spec/linkedListTests/SingleLinkedListTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="411">
-          <caret line="85" column="45" lean-forward="true" selection-start-line="85" selection-start-column="45" selection-end-line="85" selection-end-column="45" />
+        <state relative-caret-position="377">
+          <caret line="83" column="36" lean-forward="true" selection-start-line="83" selection-start-column="36" selection-end-line="83" selection-end-column="36" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -319,8 +318,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/linkedList/SingleLinkedList.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="207">
-          <caret line="20" column="24" selection-start-line="20" selection-start-column="24" selection-end-line="20" selection-end-column="24" />
+        <state relative-caret-position="173">
+          <caret line="18" column="22" selection-start-line="18" selection-start-column="22" selection-end-line="18" selection-end-column="22" />
           <folding>
             <element signature="e#113#114#0" expanded="true" />
             <element signature="e#139#140#0" expanded="true" />

@@ -23,13 +23,18 @@ public class SingleLinkedList {
             return;
         }
 
+        OneWayNode currentNode = finalNode();
+        currentNode.next = newNode;
+    }
+
+    private OneWayNode finalNode() {
         OneWayNode currentNode = head;
+
 
         while(currentNode.next() != null) {
             currentNode = currentNode.next();
         }
-
-        currentNode.next = newNode;
+        return currentNode;
     }
 
     public String toString() {
