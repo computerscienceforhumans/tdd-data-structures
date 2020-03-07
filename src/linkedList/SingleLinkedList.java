@@ -2,14 +2,27 @@ package linkedList;
 
 public class SingleLinkedList {
 
+    // TODO ideas
+    // constructor that takes a list of numbers
+    // make list generic
+
     private OneWayNode head;
+
+    public OneWayNode head() {
+        return this.head;
+    }
 
     public int headValue() {
         return head.value();
     }
 
     public void add(int number) {
-        head = new OneWayNode(number);
+        if( head == null ) {
+            head = new OneWayNode(number);
+            return;
+        }
+
+        head.next = new OneWayNode(number);
     }
 
     public String toString() {
@@ -19,13 +32,18 @@ public class SingleLinkedList {
 
     public class OneWayNode {
         private int value;
+        private OneWayNode next;
 
-        public OneWayNode(int value) {
+        OneWayNode(int value) {
             this.value = value;
         }
 
         public int value() {
             return this.value;
+        }
+
+        public OneWayNode next() {
+            return this.next;
         }
     }
 }

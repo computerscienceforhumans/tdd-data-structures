@@ -21,7 +21,7 @@ class SingleLinkedListTest {
         }
 
         @Test
-        public void emptyListDisplaysEmptyString() {
+        void emptyListDisplaysEmptyString() {
             String expected = "";
             String actual = singleLink.toString();
 
@@ -29,7 +29,7 @@ class SingleLinkedListTest {
         }
 
         @Test
-        public void listHeadValueIsSurroundedBySquareBrackets() {
+        void headValueIsSurroundedBySquareBrackets() {
             singleLink.add(128512);
 
             String expected = "[128512]";
@@ -37,6 +37,17 @@ class SingleLinkedListTest {
 
             assertEquals(expected, actual);
         }
+
+//        @Test
+//        void futureNodesAreSeparatedByArrows() {
+//            singleLink.add(406);
+//            singleLink.add(-283);
+//
+//            String expected = "[406]->-283";
+//            String actual = singleLink.toString();
+//
+//            assertEquals(expected, actual);
+//        }
 
     }
 
@@ -53,6 +64,17 @@ class SingleLinkedListTest {
 
             int expected = 137;
             int actual = singleLink.headValue();
+
+            assertEquals(expected, actual);
+        }
+
+        @Test
+        void secondAddedNodeIsNext() {
+            singleLink.add(0);
+            singleLink.add(1);
+
+            int expected = 1;
+            int actual = singleLink.head().next().value();
 
             assertEquals(expected, actual);
         }
