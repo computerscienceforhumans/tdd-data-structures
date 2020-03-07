@@ -2,7 +2,11 @@ package linkedList;
 
 public class SingleLinkedList {
 
-    public int head;
+    private int head;
+
+    public int headValue() {
+        return head;
+    }
 
     public void add(int number) {
         head = number;

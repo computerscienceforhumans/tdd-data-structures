@@ -42,7 +42,7 @@ class SingleLinkedListTest {
             singleLink.add(137);
 
             int expected = 137;
-            int actual = singleLink.head;
+            int actual = singleLink.headValue();
 
             assertEquals(expected, actual);
         }
