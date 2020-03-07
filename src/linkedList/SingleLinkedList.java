@@ -28,8 +28,13 @@ public class SingleLinkedList {
     }
 
     public String toString() {
-        if(head == null) return "";
-        return "[" + this.headValue() + "]";
+        String listString = "";
+        OneWayNode currentNode = head;
+
+        if(currentNode == null) return listString;
+        listString += "[" + currentNode.value() + "]";
+
+        return listString;
     }
 
     public class OneWayNode {
