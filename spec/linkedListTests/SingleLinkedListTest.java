@@ -39,6 +39,12 @@ class SingleLinkedListTest {
 
         @Test
         void firstAddedNodeBecomesHead() {
+            singleLink.add(137);
+
+            int expected = 137;
+            int actual = singleLink.head;
+
+            assertEquals(expected, actual);
         }
     }
 }

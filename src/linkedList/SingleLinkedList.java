@@ -2,8 +2,10 @@ package linkedList;
 
 public class SingleLinkedList {
 
-    public void add(int number) {
+    public int head;
 
+    public void add(int number) {
+        head = number;
     }
 
     public String toString() {
