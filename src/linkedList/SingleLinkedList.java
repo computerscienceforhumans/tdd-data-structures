@@ -33,10 +33,10 @@ public class SingleLinkedList {
 
         for(OneWayNode currentNode = head; currentNode != null; currentNode = currentNode.next()) {
             if (isHead) {
-                listString = listString.append("[" + currentNode.value() + "]");
+                listString.append("[").append(currentNode.value()).append("]");
                 isHead = false;
             }
-            else listString = listString.append("->(" + currentNode.value() + ")");
+            else listString.append("->(").append(currentNode.value()).append(")");
         }
 
         return listString.toString();
