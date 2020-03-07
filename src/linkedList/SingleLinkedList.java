@@ -29,10 +29,16 @@ public class SingleLinkedList {
 
     public String toString() {
         String listString = "";
-        OneWayNode currentNode = head;
+        boolean isHead = true;
 
-        if(currentNode == null) return listString;
-        listString += "[" + currentNode.value() + "]";
+        for(OneWayNode currentNode = head; currentNode != null; currentNode = currentNode.next()) {
+            if (currentNode == null) return listString;
+            if (isHead) {
+                listString += "[" + currentNode.value() + "]";
+                isHead = false;
+            }
+            else listString += currentNode.value();
+        }
 
         return listString;
     }
