@@ -1,34 +1,34 @@
 package linkedList;
 
-public class SingleLinkedList {
+public class SingleLinkedList<T> {
 
     // TODO ideas
     // constructor that takes a list of numbers
     // make list generic
 
-    private OneWayNode head;
+    private OneWayNode<T> head;
 
-    public OneWayNode head() {
+    public OneWayNode<T> head() {
         return this.head;
     }
 
-    public int headValue() {
+    public T headValue() {
         return head.value();
     }
 
-    public void appendNumber(int number) {
-        OneWayNode newNode = new OneWayNode(number);
+    public void appendNode(T value) {
+        OneWayNode<T> newNode = new OneWayNode<>(value);
         if (head == null) {
             head = newNode;
             return;
         }
 
-        OneWayNode currentNode = finalNode();
+        OneWayNode<T> currentNode = finalNode();
         currentNode.next = newNode;
     }
 
-    private OneWayNode finalNode() {
-        OneWayNode currentNode = head;
+    private OneWayNode<T> finalNode() {
+        OneWayNode<T> currentNode = head;
 
 
         while(currentNode.next() != null) {
@@ -41,7 +41,7 @@ public class SingleLinkedList {
         StringBuilder listString = new StringBuilder();
         boolean isHead = true;
 
-        for(OneWayNode currentNode = head; currentNode != null; currentNode = currentNode.next()) {
+        for(OneWayNode<T> currentNode = head; currentNode != null; currentNode = currentNode.next()) {
             if (isHead) {
                 listString.append("[").append(currentNode.value()).append("]");
                 isHead = false;
@@ -52,19 +52,19 @@ public class SingleLinkedList {
         return listString.toString();
     }
 
-    public class OneWayNode {
-        private int value;
-        private OneWayNode next;
+    public class OneWayNode<T> {
+        private T value;
+        private OneWayNode<T> next;
 
-        OneWayNode(int value) {
+        OneWayNode(T value) {
             this.value = value;
         }
 
-        public int value() {
+        public T value() {
             return this.value;
         }
 
-        public OneWayNode next() {
+        public OneWayNode<T> next() {
             return this.next;
         }
     }

@@ -2,7 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="88d2395b-89b1-4457-876f-94d455144f1a" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/spec/linkedListTests/SingleLinkedListTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/spec/linkedListTests/SingleLinkedListTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/linkedList/SingleLinkedList.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/linkedList/SingleLinkedList.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -19,13 +21,14 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/linkedList/SingleLinkedList.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="190">
-              <caret line="18" column="28" selection-start-line="18" selection-start-column="28" selection-end-line="18" selection-end-column="28" />
+            <state relative-caret-position="206">
+              <caret line="14" column="26" lean-forward="true" selection-start-line="14" selection-start-column="26" selection-end-line="14" selection-end-column="26" />
               <folding>
                 <element signature="e#113#114#0" expanded="true" />
                 <element signature="e#139#140#0" expanded="true" />
-                <element signature="e#370#371#0" expanded="true" />
-                <element signature="e#412#413#0" expanded="true" />
+                <element signature="e#131#132#0" expanded="true" />
+                <element signature="e#1449#1450#0" expanded="true" />
+                <element signature="e#1491#1492#0" expanded="true" />
                 <element signature="e#348#349#0" expanded="true" />
                 <element signature="e#382#383#0" expanded="true" />
                 <element signature="e#760#761#0" expanded="true" />
@@ -38,8 +41,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/spec/linkedListTests/SingleLinkedListTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="207">
-              <caret line="54" column="25" selection-start-line="54" selection-start-column="25" selection-end-line="54" selection-end-column="25" />
+            <state relative-caret-position="391">
+              <caret line="60" column="13" lean-forward="true" selection-start-line="60" selection-start-column="13" selection-end-line="60" selection-end-column="13" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -73,6 +76,13 @@
         <option value="JUnit5 Test Class" />
       </list>
     </option>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>new</find>
+      <find>Linked</find>
+      <find>int</find>
+    </findStrings>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -223,12 +233,6 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="SingleLinkedListTest - 2020.03.06 at 21h 03m 45s.xml">
-      <configuration name="SingleLinkedListTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="SingleLinkedListTest - 2020.03.06 at 21h 04m 21s.xml">
-      <configuration name="SingleLinkedListTest" configurationId="JUnit" />
-    </history-entry>
     <history-entry file="SingleLinkedListTest - 2020.03.06 at 21h 04m 35s.xml">
       <configuration name="SingleLinkedListTest" configurationId="JUnit" />
     </history-entry>
@@ -253,10 +257,15 @@
     <history-entry file="SingleLinkedListTest - 2020.03.06 at 21h 18m 00s.xml">
       <configuration name="SingleLinkedListTest" configurationId="JUnit" />
     </history-entry>
+    <history-entry file="SingleLinkedListTest - 2020.03.06 at 21h 50m 54s.xml">
+      <configuration name="SingleLinkedListTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="SingleLinkedListTest - 2020.03.06 at 23h 17m 04s.xml">
+      <configuration name="SingleLinkedListTest" configurationId="JUnit" />
+    </history-entry>
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1873" height="1096" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.25261998" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -267,15 +276,15 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Version Control" order="0" />
       <window_info anchor="bottom" id="Event Log" order="1" sideWeight="0.50137895" side_tool="true" weight="0.32917964" />
-      <window_info anchor="bottom" id="Messages" order="2" sideWeight="0.4997242" weight="0.32917964" />
+      <window_info anchor="bottom" id="Messages" order="2" sideWeight="0.49917263" weight="0.32917964" />
       <window_info anchor="bottom" id="Message" order="3" />
       <window_info anchor="bottom" id="Find" order="4" sideWeight="0.49862108" weight="0.32917964" />
-      <window_info anchor="bottom" id="Run" order="5" sideWeight="0.4980695" visible="true" weight="0.32917964" />
+      <window_info anchor="bottom" id="Run" order="5" sideWeight="0.4975179" visible="true" weight="0.32917964" />
       <window_info anchor="bottom" id="Debug" order="6" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="7" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="8" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="9" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="10" sideWeight="0.5019305" side_tool="true" visible="true" weight="0.32917964" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="10" sideWeight="0.50248206" side_tool="true" visible="true" weight="0.32917964" />
       <window_info anchor="right" id="Palette" order="0" />
       <window_info anchor="right" id="Theme Preview" order="1" />
       <window_info anchor="right" id="Capture Analysis" order="2" />
@@ -307,13 +316,14 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/linkedList/SingleLinkedList.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="190">
-          <caret line="18" column="28" selection-start-line="18" selection-start-column="28" selection-end-line="18" selection-end-column="28" />
+        <state relative-caret-position="206">
+          <caret line="14" column="26" lean-forward="true" selection-start-line="14" selection-start-column="26" selection-end-line="14" selection-end-column="26" />
           <folding>
             <element signature="e#113#114#0" expanded="true" />
             <element signature="e#139#140#0" expanded="true" />
-            <element signature="e#370#371#0" expanded="true" />
-            <element signature="e#412#413#0" expanded="true" />
+            <element signature="e#131#132#0" expanded="true" />
+            <element signature="e#1449#1450#0" expanded="true" />
+            <element signature="e#1491#1492#0" expanded="true" />
             <element signature="e#348#349#0" expanded="true" />
             <element signature="e#382#383#0" expanded="true" />
             <element signature="e#760#761#0" expanded="true" />
@@ -324,8 +334,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/spec/linkedListTests/SingleLinkedListTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="207">
-          <caret line="54" column="25" selection-start-line="54" selection-start-column="25" selection-end-line="54" selection-end-column="25" />
+        <state relative-caret-position="391">
+          <caret line="60" column="13" lean-forward="true" selection-start-line="60" selection-start-column="13" selection-end-line="60" selection-end-column="13" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
