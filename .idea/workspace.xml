@@ -20,8 +20,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/linkedList/SingleLinkedList.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="493">
-              <caret line="37" column="16" selection-start-line="37" selection-start-column="16" selection-end-line="37" selection-end-column="16" />
+            <state relative-caret-position="527">
+              <caret line="39" column="63" selection-start-line="39" selection-start-column="63" selection-end-line="39" selection-end-column="63" />
               <folding>
                 <element signature="e#113#114#0" expanded="true" />
                 <element signature="e#139#140#0" expanded="true" />
@@ -40,7 +40,7 @@
         <entry file="file://$PROJECT_DIR$/spec/linkedListTests/SingleLinkedListTest.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="326">
-              <caret line="45" column="36" lean-forward="true" selection-start-line="45" selection-start-column="36" selection-end-line="45" selection-end-column="36" />
+              <caret line="45" column="44" selection-start-line="45" selection-start-column="44" selection-end-line="45" selection-end-column="44" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -223,15 +223,6 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="SingleLinkedListTest - 2020.03.06 at 19h 43m 33s.xml">
-      <configuration name="SingleLinkedListTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="SingleLinkedListTest - 2020.03.06 at 19h 51m 05s.xml">
-      <configuration name="SingleLinkedListTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="SingleLinkedListTest - 2020.03.06 at 20h 11m 50s.xml">
-      <configuration name="SingleLinkedListTest" configurationId="JUnit" />
-    </history-entry>
     <history-entry file="SingleLinkedListTest - 2020.03.06 at 20h 15m 19s.xml">
       <configuration name="SingleLinkedListTest" configurationId="JUnit" />
     </history-entry>
@@ -251,6 +242,15 @@
       <configuration name="SingleLinkedListTest" configurationId="JUnit" />
     </history-entry>
     <history-entry file="SingleLinkedListTest - 2020.03.06 at 20h 38m 30s.xml">
+      <configuration name="SingleLinkedListTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="SingleLinkedListTest - 2020.03.06 at 20h 39m 17s.xml">
+      <configuration name="SingleLinkedListTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="SingleLinkedListTest - 2020.03.06 at 20h 40m 19s.xml">
+      <configuration name="SingleLinkedListTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="SingleLinkedListTest - 2020.03.06 at 20h 40m 40s.xml">
       <configuration name="SingleLinkedListTest" configurationId="JUnit" />
     </history-entry>
   </component>
@@ -308,7 +308,7 @@
     <entry file="file://$PROJECT_DIR$/spec/linkedListTests/SingleLinkedListTest.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="326">
-          <caret line="45" column="36" lean-forward="true" selection-start-line="45" selection-start-column="36" selection-end-line="45" selection-end-column="36" />
+          <caret line="45" column="44" selection-start-line="45" selection-start-column="44" selection-end-line="45" selection-end-column="44" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -317,8 +317,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/linkedList/SingleLinkedList.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="493">
-          <caret line="37" column="16" selection-start-line="37" selection-start-column="16" selection-end-line="37" selection-end-column="16" />
+        <state relative-caret-position="527">
+          <caret line="39" column="63" selection-start-line="39" selection-start-column="63" selection-end-line="39" selection-end-column="63" />
           <folding>
             <element signature="e#113#114#0" expanded="true" />
             <element signature="e#139#140#0" expanded="true" />

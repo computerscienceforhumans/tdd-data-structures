@@ -37,7 +37,7 @@ public class SingleLinkedList {
                 listString += "[" + currentNode.value() + "]";
                 isHead = false;
             }
-            else listString += currentNode.value();
+            else listString += "->(" + currentNode.value() + ")";
         }
 
         return listString;

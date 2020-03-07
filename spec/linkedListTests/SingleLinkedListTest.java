@@ -43,7 +43,7 @@ class SingleLinkedListTest {
             singleLink.addToTailEnd(406);
             singleLink.addToTailEnd(-283);
 
-            String expected = "[406]-283";
+            String expected = "[406]->(-283)";
             String actual = singleLink.toString();
 
             assertEquals(expected, actual);
