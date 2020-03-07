@@ -2,17 +2,29 @@ package linkedList;
 
 public class SingleLinkedList {
 
-    private int head;
+    private OneWayNode head;
 
     public int headValue() {
-        return head;
+        return head.value();
     }
 
     public void add(int number) {
-        head = number;
+        head = new OneWayNode(number);
     }
 
     public String toString() {
         return "";
+    }
+
+    public class OneWayNode {
+        private int value;
+
+        public OneWayNode(int value) {
+            this.value = value;
+        }
+
+        public int value() {
+            return this.value;
+        }
     }
 }
