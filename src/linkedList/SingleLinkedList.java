@@ -17,12 +17,14 @@ public class SingleLinkedList {
     }
 
     public void add(int number) {
-        if( head == null ) {
-            head = new OneWayNode(number);
+        OneWayNode newNode = new OneWayNode(number);
+
+        if( this.head == null ) {
+            this.head = newNode;
             return;
         }
 
-        head.next = new OneWayNode(number);
+        this.head.next = newNode;
     }
 
     public String toString() {
