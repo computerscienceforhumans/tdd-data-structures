@@ -2,11 +2,15 @@ package linkedList;
 
 public class SingleLinkedList<T> {
 
-    // TODO ideas
-    // constructor that takes a list of numbers
-    // make list generic
-
     private OneWayNode<T> head;
+
+    public SingleLinkedList(){}
+
+    public SingleLinkedList(T[] startingElements) {
+        for(T element : startingElements) {
+            this.appendNode(element);
+        }
+    }
 
     public OneWayNode<T> head() {
         return this.head;

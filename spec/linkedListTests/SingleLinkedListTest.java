@@ -5,11 +5,23 @@ import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Nested;
 import org.junit.jupiter.api.Test;
 
+import java.lang.reflect.AccessibleObject;
+
 import static org.junit.jupiter.api.Assertions.*;
 
 class SingleLinkedListTest {
     SingleLinkedList<Integer> singleLink;
 
+    @Test
+    void createFromArray() {
+        String[] strings = new String[5];
+        SingleLinkedList<String> listFromAray = new SingleLinkedList<>(strings);
+
+        String expected = "[null]->(null)->(null)->(null)->(null)";
+        String actual = listFromAray.toString();
+
+        assertEquals(expected, actual);
+    }
 
 
     @Nested
@@ -55,7 +67,7 @@ class SingleLinkedListTest {
     class AppendNodeTests {
         @BeforeEach
         void setUp() {
-            singleLink = new SingleLinkedList<>();
+            singleLink = new SingleLinkedList<Integer>();
         }
 
         @Test
