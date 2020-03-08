@@ -5,8 +5,6 @@ import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Nested;
 import org.junit.jupiter.api.Test;
 
-import java.lang.reflect.AccessibleObject;
-
 import static org.junit.jupiter.api.Assertions.*;
 
 class SingleLinkedListTest {
@@ -71,11 +69,32 @@ class SingleLinkedListTest {
             singleLink = new SingleLinkedList<>();
         }
 
-        @Test
-        void hasNextIsFalseInEmptyList() {
-            boolean next = singleLink.iterator().hasNext();
+        @Nested
+        class HasNextTests {
 
-            assertFalse(next);
+            @Test
+            void isFalseInEmptyList() {
+                boolean hasNextInEmptyList = singleLink.iterator().hasNext();
+
+                assertFalse(hasNextInEmptyList);
+            }
+
+            @Test
+            void isFalseAtEndOfList() {
+                singleLink.appendNode(37);
+                boolean hasNextAtEndOfList = singleLink.iterator().hasNext();
+
+                assertFalse(hasNextAtEndOfList);
+            }
+
+            @Test
+            void isTrueWhenNextNodeExists() {
+                singleLink.appendNode(99872);
+                singleLink.appendNode(58);
+                boolean hasNextBeforeListEnds = singleLink.iterator().hasNext();
+
+                assertTrue(hasNextBeforeListEnds);
+            }
         }
     }
 
@@ -102,7 +121,7 @@ class SingleLinkedListTest {
             singleLink.appendNode(1);
 
             int expected = 1;
-            int actual = singleLink.head().next().value();
+            int actual = singleLink.head().nextNode().value();
 
             assertEquals(expected, actual);
         }
@@ -114,7 +133,7 @@ class SingleLinkedListTest {
             singleLink.appendNode(1111111);
 
             int expected = 1111111;
-            int actual = singleLink.head().next().next().value();
+            int actual = singleLink.head().nextNode().nextNode().value();
 
             assertEquals(expected, actual);
         }

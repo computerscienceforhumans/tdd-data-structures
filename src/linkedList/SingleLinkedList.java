@@ -25,7 +25,7 @@ public class SingleLinkedList<T> implements Iterable<T> {
 
         @Override
         public boolean hasNext() {
-            return false;
+            return currentNode != null && currentNode.nextNode() != null;
         }
 
         @Override
@@ -82,8 +82,8 @@ public class SingleLinkedList<T> implements Iterable<T> {
         OneWayNode<T> currentNode = head;
 
 
-        while(currentNode.next() != null) {
-            currentNode = currentNode.next();
+        while(currentNode.nextNode() != null) {
+            currentNode = currentNode.nextNode();
         }
         return currentNode;
     }
@@ -92,7 +92,7 @@ public class SingleLinkedList<T> implements Iterable<T> {
         StringBuilder listString = new StringBuilder();
         boolean isHead = true;
 
-        for(OneWayNode<T> currentNode = head; currentNode != null; currentNode = currentNode.next()) {
+        for(OneWayNode<T> currentNode = head; currentNode != null; currentNode = currentNode.nextNode()) {
             if (isHead) {
                 listString.append("[").append(currentNode.value()).append("]");
                 isHead = false;
@@ -115,7 +115,7 @@ public class SingleLinkedList<T> implements Iterable<T> {
             return this.value;
         }
 
-        public OneWayNode<T> next() {
+        public OneWayNode<T> nextNode() {
             return this.next;
         }
     }
