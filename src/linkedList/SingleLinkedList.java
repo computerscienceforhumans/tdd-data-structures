@@ -1,6 +1,10 @@
 package linkedList;
 
-public class SingleLinkedList<T> {
+import java.util.Iterator;
+import java.util.Spliterator;
+import java.util.function.Consumer;
+
+public class SingleLinkedList<T> implements Iterable<T> {
 
     private OneWayNode<T> head;
 
@@ -10,6 +14,49 @@ public class SingleLinkedList<T> {
         for(T element : startingElements) {
             this.appendNode(element);
         }
+    }
+
+    class SingleLinkedListIterator implements Iterator<T>{
+        OneWayNode<T> currentNode;
+
+        SingleLinkedListIterator(SingleLinkedList<T> singleLinkedList) {
+            currentNode = singleLinkedList.head();
+        }
+
+        @Override
+        public boolean hasNext() {
+            return false;
+        }
+
+        @Override
+        public T next() {
+            return null;
+        }
+
+        @Override
+        public void remove() {
+
+        }
+
+        @Override
+        public void forEachRemaining(Consumer<? super T> action) {
+
+        }
+    }
+
+    @Override
+    public Iterator<T> iterator() {
+        return new SingleLinkedListIterator(this);
+    }
+
+    @Override
+    public void forEach(Consumer<? super T> action) {
+
+    }
+
+    @Override
+    public Spliterator<T> spliterator() {
+        return null;
     }
 
     public OneWayNode<T> head() {

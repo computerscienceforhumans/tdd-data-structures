@@ -63,6 +63,22 @@ class SingleLinkedListTest {
 
     }
 
+
+    @Nested
+    class IteratorTests {
+        @BeforeEach
+        void setUp() {
+            singleLink = new SingleLinkedList<>();
+        }
+
+        @Test
+        void hasNextIsFalseInEmptyList() {
+            boolean next = singleLink.iterator().hasNext();
+
+            assertFalse(next);
+        }
+    }
+
     @Nested
     class AppendNodeTests {
         @BeforeEach

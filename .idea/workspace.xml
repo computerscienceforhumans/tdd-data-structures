@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="88d2395b-89b1-4457-876f-94d455144f1a" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/spec/linkedListTests/SingleLinkedListTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/spec/linkedListTests/SingleLinkedListTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/linkedList/SingleLinkedList.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/linkedList/SingleLinkedList.java" afterDir="false" />
     </list>
@@ -14,21 +13,32 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="CoverageViewManager">
-    <option name="myElementSize" value="235" />
+    <option name="myElementSize" value="260" />
   </component>
   <component name="DefaultGradleProjectSettings">
     <option name="isMigrated" value="true" />
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/linkedList/SingleLinkedList.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="119">
-              <caret line="7" lean-forward="true" selection-start-line="7" selection-end-line="7" />
+            <state relative-caret-position="174">
+              <caret line="48" column="48" selection-start-line="48" selection-start-column="48" selection-end-line="48" selection-end-column="48" />
               <folding>
-                <element signature="e#338#339#0" expanded="true" />
-                <element signature="e#401#402#0" expanded="true" />
+                <element signature="imports" expanded="true" />
+                <element signature="e#565#566#0" expanded="true" />
+                <element signature="e#618#619#0" expanded="true" />
+                <element signature="e#672#673#0" expanded="true" />
+                <element signature="e#708#709#0" expanded="true" />
+                <element signature="e#541#542#0" expanded="true" />
+                <element signature="e#576#577#0" expanded="true" />
+                <element signature="e#448#449#0" expanded="true" />
+                <element signature="e#475#476#0" expanded="true" />
+                <element signature="e#608#609#0" expanded="true" />
+                <element signature="e#635#636#0" expanded="true" />
+                <element signature="e#1287#1288#0" expanded="true" />
+                <element signature="e#1350#1351#0" expanded="true" />
                 <element signature="e#1449#1450#0" expanded="true" />
                 <element signature="e#1491#1492#0" expanded="true" />
                 <element signature="e#348#349#0" expanded="true" />
@@ -40,14 +50,16 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/spec/linkedListTests/SingleLinkedListTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="204">
-              <caret line="19" column="65" selection-start-line="19" selection-start-column="65" selection-end-line="19" selection-end-column="65" />
+            <state relative-caret-position="396">
+              <caret line="77" column="30" selection-start-line="77" selection-start-column="30" selection-end-line="77" selection-end-column="30" />
               <folding>
                 <element signature="e#371#372#0" expanded="true" />
                 <element signature="e#430#431#0" expanded="true" />
+                <element signature="e#1664#1665#0" expanded="true" />
+                <element signature="e#1732#1733#0" expanded="true" />
                 <element signature="e#726#727#0" expanded="true" />
                 <element signature="e#785#786#0" expanded="true" />
               </folding>
@@ -59,7 +71,7 @@
         <entry file="file://$PROJECT_DIR$/README.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="SPLIT">
-              <first_editor relative-caret-position="170">
+              <first_editor relative-caret-position="207">
                 <caret line="10" column="361" selection-start-line="10" selection-start-column="361" selection-end-line="10" selection-end-column="361" />
               </first_editor>
               <second_editor />
@@ -85,8 +97,8 @@
   <component name="FindInProjectRecents">
     <findStrings>
       <find>new</find>
-      <find>Linked</find>
       <find>int</find>
+      <find>Linked</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -97,8 +109,8 @@
       <list>
         <option value="$PROJECT_DIR$/.gitignore" />
         <option value="$PROJECT_DIR$/README.md" />
-        <option value="$PROJECT_DIR$/src/linkedList/SingleLinkedList.java" />
         <option value="$PROJECT_DIR$/spec/linkedListTests/SingleLinkedListTest.java" />
+        <option value="$PROJECT_DIR$/src/linkedList/SingleLinkedList.java" />
       </list>
     </option>
   </component>
@@ -148,6 +160,7 @@
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5" value="" />
     <property name="extract.method.default.visibility" value="private" />
     <property name="jdk.selected.JAVA_MODULE" value="1.8" />
+    <property name="settings.editor.selected.configurable" value="editor.preferences.fonts.default" />
   </component>
   <component name="RecentsManager">
     <key name="CreateTestDialog.RecentsKey">
@@ -169,7 +182,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.SingleLinkedListTest">
+  <component name="RunManager" selected="JUnit.SingleLinkedListTest$IteratorTests.hasNextIsFalseInEmptyList">
     <configuration name="SingleLinkedListTest$AppendNode" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="tdd-data-structures" />
       <extension name="coverage">
@@ -181,6 +194,22 @@
       <option name="PACKAGE_NAME" value="linkedListTests" />
       <option name="MAIN_CLASS_NAME" value="linkedListTests.SingleLinkedListTest$AppendNode" />
       <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="SingleLinkedListTest$IteratorTests.hasNextIsFalseInEmptyList" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="tdd-data-structures" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="linkedListTests.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="linkedListTests" />
+      <option name="MAIN_CLASS_NAME" value="linkedListTests.SingleLinkedListTest$IteratorTests" />
+      <option name="METHOD_NAME" value="hasNextIsFalseInEmptyList" />
+      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -240,6 +269,7 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.SingleLinkedListTest$IteratorTests.hasNextIsFalseInEmptyList" />
         <item itemvalue="JUnit.SingleLinkedListTest" />
         <item itemvalue="JUnit.SingleLinkedListTest.createFromArray" />
         <item itemvalue="JUnit.SingleLinkedListTest$AppendNode" />
@@ -261,15 +291,6 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="SingleLinkedListTest - 2020.03.06 at 21h 15m 01s.xml">
-      <configuration name="SingleLinkedListTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="SingleLinkedListTest - 2020.03.06 at 21h 17m 37s.xml">
-      <configuration name="SingleLinkedListTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="SingleLinkedListTest - 2020.03.06 at 21h 18m 00s.xml">
-      <configuration name="SingleLinkedListTest" configurationId="JUnit" />
-    </history-entry>
     <history-entry file="SingleLinkedListTest - 2020.03.06 at 21h 50m 54s.xml">
       <configuration name="SingleLinkedListTest" configurationId="JUnit" />
     </history-entry>
@@ -291,12 +312,21 @@
     <history-entry file="SingleLinkedListTest - 2020.03.07 at 22h 51m 45s.xml">
       <configuration name="SingleLinkedListTest" configurationId="JUnit" />
     </history-entry>
+    <history-entry file="SingleLinkedListTest - 2020.03.07 at 22h 52m 13s.xml">
+      <configuration name="SingleLinkedListTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="SingleLinkedListTest - 2020.03.07 at 23h 08m 35s.xml">
+      <configuration name="SingleLinkedListTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="SingleLinkedListTest$IteratorTests_hasNextIsFalseInEmptyList - 2020.03.07 at 23h 48m 10s.xml">
+      <configuration name="SingleLinkedListTest$IteratorTests.hasNextIsFalseInEmptyList" configurationId="JUnit" />
+    </history-entry>
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1873" height="1096" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.25261998" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.25430316" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -305,16 +335,16 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Version Control" order="0" />
       <window_info anchor="bottom" id="Event Log" order="1" sideWeight="0.50137895" side_tool="true" weight="0.32917964" />
-      <window_info anchor="bottom" id="Messages" order="2" sideWeight="0.49696636" weight="0.32917964" />
+      <window_info active="true" anchor="bottom" id="Messages" order="2" sideWeight="0.49639088" visible="true" weight="0.32870865" />
       <window_info anchor="bottom" id="Message" order="3" />
       <window_info anchor="bottom" id="Find" order="4" sideWeight="0.49862108" weight="0.32917964" />
-      <window_info active="true" anchor="bottom" id="Run" order="5" sideWeight="0.49641478" visible="true" weight="0.32917964" />
+      <window_info anchor="bottom" id="Run" order="5" sideWeight="0.49639088" weight="0.33831376" />
       <window_info anchor="bottom" id="Debug" order="6" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="7" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="8" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="9" />
-      <window_info anchor="bottom" id="Terminal" order="10" sideWeight="0.5035852" side_tool="true" visible="true" weight="0.32917964" />
-      <window_info anchor="right" id="Coverage" side_tool="true" visible="true" weight="0.32984003" />
+      <window_info anchor="bottom" id="Terminal" order="10" sideWeight="0.5036091" side_tool="true" visible="true" weight="0.32870865" />
+      <window_info anchor="right" id="Coverage" side_tool="true" weight="0.33203775" />
       <window_info anchor="right" id="Palette" order="0" />
       <window_info anchor="right" id="Theme Preview" order="1" />
       <window_info anchor="right" id="Capture Analysis" order="2" />
@@ -338,7 +368,7 @@
     <entry file="file://$PROJECT_DIR$/README.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
-          <first_editor relative-caret-position="170">
+          <first_editor relative-caret-position="207">
             <caret line="10" column="361" selection-start-line="10" selection-start-column="361" selection-end-line="10" selection-end-column="361" />
           </first_editor>
           <second_editor />
@@ -350,32 +380,52 @@
         </state>
       </provider>
     </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_144/src.zip!/java/lang/Iterable.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="195">
+          <caret line="50" column="16" selection-start-line="50" selection-start-column="16" selection-end-line="50" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/spec/linkedListTests/SingleLinkedListTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="396">
+          <caret line="77" column="30" selection-start-line="77" selection-start-column="30" selection-end-line="77" selection-end-column="30" />
+          <folding>
+            <element signature="e#371#372#0" expanded="true" />
+            <element signature="e#430#431#0" expanded="true" />
+            <element signature="e#1664#1665#0" expanded="true" />
+            <element signature="e#1732#1733#0" expanded="true" />
+            <element signature="e#726#727#0" expanded="true" />
+            <element signature="e#785#786#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/linkedList/SingleLinkedList.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="7" lean-forward="true" selection-start-line="7" selection-end-line="7" />
+        <state relative-caret-position="174">
+          <caret line="48" column="48" selection-start-line="48" selection-start-column="48" selection-end-line="48" selection-end-column="48" />
           <folding>
-            <element signature="e#338#339#0" expanded="true" />
-            <element signature="e#401#402#0" expanded="true" />
+            <element signature="imports" expanded="true" />
+            <element signature="e#565#566#0" expanded="true" />
+            <element signature="e#618#619#0" expanded="true" />
+            <element signature="e#672#673#0" expanded="true" />
+            <element signature="e#708#709#0" expanded="true" />
+            <element signature="e#541#542#0" expanded="true" />
+            <element signature="e#576#577#0" expanded="true" />
+            <element signature="e#448#449#0" expanded="true" />
+            <element signature="e#475#476#0" expanded="true" />
+            <element signature="e#608#609#0" expanded="true" />
+            <element signature="e#635#636#0" expanded="true" />
+            <element signature="e#1287#1288#0" expanded="true" />
+            <element signature="e#1350#1351#0" expanded="true" />
             <element signature="e#1449#1450#0" expanded="true" />
             <element signature="e#1491#1492#0" expanded="true" />
             <element signature="e#348#349#0" expanded="true" />
             <element signature="e#382#383#0" expanded="true" />
             <element signature="e#760#761#0" expanded="true" />
             <element signature="e#800#801#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/spec/linkedListTests/SingleLinkedListTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="19" column="65" selection-start-line="19" selection-start-column="65" selection-end-line="19" selection-end-column="65" />
-          <folding>
-            <element signature="e#371#372#0" expanded="true" />
-            <element signature="e#430#431#0" expanded="true" />
-            <element signature="e#726#727#0" expanded="true" />
-            <element signature="e#785#786#0" expanded="true" />
           </folding>
         </state>
       </provider>
