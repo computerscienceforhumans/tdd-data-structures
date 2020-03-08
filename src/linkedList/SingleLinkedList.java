@@ -30,7 +30,7 @@ public class SingleLinkedList<T> implements Iterable<T> {
 
         @Override
         public T next() {
-            return null;
+            return currentNode.value();
         }
 
         @Override

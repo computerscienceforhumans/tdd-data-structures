@@ -7,6 +7,12 @@ import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.*;
 
+/**
+ *
+ * nodes should be dependency injected into different list/tree types
+ *
+ * */
+
 class SingleLinkedListTest {
     SingleLinkedList<Integer> singleLink;
 
@@ -94,6 +100,19 @@ class SingleLinkedListTest {
                 boolean hasNextBeforeListEnds = singleLink.iterator().hasNext();
 
                 assertTrue(hasNextBeforeListEnds);
+            }
+        }
+
+        @Nested
+        class NextTests {
+            // return this one and go to the next one
+
+            @Test
+            void returnsCurrentNodeValue() {
+                singleLink.appendNode(-129);
+                int currentNodeValue = singleLink.iterator().next();
+
+                assertEquals(-129, currentNodeValue);
             }
         }
     }
