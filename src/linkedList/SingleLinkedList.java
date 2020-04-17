@@ -16,34 +16,6 @@ public class SingleLinkedList<T> implements Iterable<T> {
         }
     }
 
-    class SingleLinkedListIterator implements Iterator<T>{
-        OneWayNode<T> currentNode;
-
-        SingleLinkedListIterator(SingleLinkedList<T> singleLinkedList) {
-            currentNode = singleLinkedList.head();
-        }
-
-        @Override
-        public boolean hasNext() {
-            return currentNode != null && currentNode.nextNode() != null;
-        }
-
-        @Override
-        public T next() {
-            return currentNode.value();
-        }
-
-        @Override
-        public void remove() {
-
-        }
-
-        @Override
-        public void forEachRemaining(Consumer<? super T> action) {
-
-        }
-    }
-
     @Override
     public Iterator<T> iterator() {
         return new SingleLinkedListIterator(this);
@@ -75,7 +47,7 @@ public class SingleLinkedList<T> implements Iterable<T> {
         }
 
         OneWayNode<T> currentNode = finalNode();
-        currentNode.next = newNode;
+        currentNode.nextNode = newNode;
     }
 
     private OneWayNode<T> finalNode() {
@@ -105,7 +77,7 @@ public class SingleLinkedList<T> implements Iterable<T> {
 
     public class OneWayNode<T> {
         private T value;
-        private OneWayNode<T> next;
+        private OneWayNode<T> nextNode;
 
         OneWayNode(T value) {
             this.value = value;
@@ -116,7 +88,33 @@ public class SingleLinkedList<T> implements Iterable<T> {
         }
 
         public OneWayNode<T> nextNode() {
-            return this.next;
+            return this.nextNode;
+        }
+    }
+
+    class SingleLinkedListIterator implements Iterator<T>{
+        OneWayNode<T> currentNode;
+
+        SingleLinkedListIterator(SingleLinkedList<T> singleLinkedList) {
+            currentNode = singleLinkedList.head();
+        }
+
+        @Override
+        public boolean hasNext() {
+            return currentNode != null;
+        }
+
+        @Override
+        public T next() {
+            if(!hasNext()) return null;
+            T value = currentNode.value();
+            currentNode = currentNode.nextNode();
+            return value;
+        }
+
+        @Override
+        public void remove() {
+
         }
     }
 }

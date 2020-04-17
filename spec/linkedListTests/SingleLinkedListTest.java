@@ -5,6 +5,8 @@ import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Nested;
 import org.junit.jupiter.api.Test;
 
+import java.util.Iterator;
+
 import static org.junit.jupiter.api.Assertions.*;
 
 /**
@@ -87,10 +89,21 @@ class SingleLinkedListTest {
 
             @Test
             void isFalseAtEndOfList() {
-                singleLink.appendNode(37);
-                boolean hasNextAtEndOfList = singleLink.iterator().hasNext();
+                Iterator<Integer> iter = singleLink.iterator();
 
-                assertFalse(hasNextAtEndOfList);
+                boolean hasNextInEmptyList = iter.hasNext();
+                assertFalse(hasNextInEmptyList);
+
+                singleLink.appendNode(37);
+                singleLink.appendNode(37);
+                singleLink.appendNode(37);
+                singleLink.appendNode(37);
+                iter.next();
+                iter.next();
+                iter.next();
+                iter.next();
+                boolean hasNextAfterIteratingThroughEachElement = iter.hasNext();
+                assertFalse(hasNextAfterIteratingThroughEachElement);
             }
 
             @Test
@@ -110,9 +123,23 @@ class SingleLinkedListTest {
             @Test
             void returnsCurrentNodeValue() {
                 singleLink.appendNode(-129);
-                int currentNodeValue = singleLink.iterator().next();
+                int nodeValueBeforeIterating = singleLink.iterator().next();
 
-                assertEquals(-129, currentNodeValue);
+                assertEquals(-129, nodeValueBeforeIterating);
+            }
+
+            @Test
+            void returnsNextNodeValueTheSecondTime() {
+                singleLink.appendNode(12);
+                singleLink.appendNode(42);
+
+
+                int secondNodeValue = 0;
+                for(Integer currentValue : singleLink) {
+                    System.out.println(currentValue);
+//                    secondNodeValue = singleLink.iterator().next()next;
+                }
+                assertEquals(0, secondNodeValue);
             }
         }
     }
