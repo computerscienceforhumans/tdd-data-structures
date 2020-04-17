@@ -64,12 +64,12 @@ public class SingleLinkedList<T> implements Iterable<T> {
         StringBuilder listString = new StringBuilder();
         boolean isHead = true;
 
-        for(OneWayNode<T> currentNode = head; currentNode != null; currentNode = currentNode.nextNode()) {
+        for(T currentNode : this) {
             if (isHead) {
-                listString.append("[").append(currentNode.value()).append("]");
+                listString.append("[").append(currentNode).append("]");
                 isHead = false;
             }
-            else listString.append("->(").append(currentNode.value()).append(")");
+            else listString.append("->(").append(currentNode).append(")");
         }
 
         return listString.toString();
