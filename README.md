@@ -1,6 +1,8 @@
 # tdd-data-structures
 This repository is a collection of data structures taken from real situations that suffer from a variety of code smells. In some cases, they may not even work. **The purpose of this is to enable refactoring practice**, since on-the-job practice of refactoring can be scary at first.
 
+If you want to practice your refactoring on these data structures, feel free to fork the project and give it a go. Then have someone more experienced with refactoring take a look at it and give you pointers.
+
 # Versioning Stuff
 - Uses Junit5 and Java 8.0
 
