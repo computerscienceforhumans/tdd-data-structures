@@ -1,8 +1,7 @@
 # tdd-data-structures
-This repository is a collection of data structures built for practice with TDD. 
+This repository is a collection of data structures taken from real situations that suffer from a variety of code smells. In some cases, they may not even work. **The purpose of this is to enable refactoring practice**, since on-the-job practice of refactoring can be scary at first.
 
-More info should be added as the repo grows.
-
+# Versioning Stuff
 - Uses Junit5 and Java 8.0
 
 # Assorted Guidelines:
@@ -16,5 +15,4 @@ but with smaller steps this time. It is practice after all :)
 
 # IntelliJ Plugins Installed
 - Gauge
-- Markdown Navigator
 - Markdown Navigator
